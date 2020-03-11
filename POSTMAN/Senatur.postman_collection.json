@@ -1,0 +1,182 @@
+{
+	"info": {
+		"_postman_id": "faf93104-27a1-44f9-8c37-9c55cf99fc0d",
+		"name": "Senatur",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Pacotes",
+			"item": [
+				{
+					"name": "ListarPacotes",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5000/api/Pacotes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Pacotes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BuscarPorId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/Pacotes/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Pacotes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cadastrar",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\t\n        \"nomePacote\": \"FEIO FRIO E CHOEIOROsS\",\n        \"descricao\": \"Localizado no estado de Mato Grosso do\\nSul e ao sul do Pantanal, Bonito possui centenas de cachoeiras, rios e lagos de águas\\ncristalinas, além de cavernas inundadas, paredões rochosos e uma infinidade de peixes.\\nOs aventureiros costumam render-se facilmente a esse destino regado por trilhas\\necológicas, passeios de bote e descidas de rapel pelas inúmeras quedas d água da\\nregião.\",\n        \"dataIda\": \"2020-03-28T00:00:00\",\n        \"dataVolta\": \"2020-04-01T00:00:00\",\n        \"valor\": 1004,\n        \"ativo\": true,\n        \"nomeCidade\": \"Bonito\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/Pacotes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Pacotes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AtualizarPorId",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\t\n        \"nomePacote\": \"FEIO FRIO E Chuvoso\",\n        \"descricao\": \"dwadwa\",\n        \"dataIda\": \"2020-03-28T00:00:00\",\n        \"dataVolta\": \"2020-04-01T00:00:00\",\n        \"valor\": 50,\n        \"ativo\": true,\n        \"nomeCidade\": \"Bonito\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/Pacotes/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Pacotes",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Usuario",
+			"item": [
+				{
+					"name": "ListarUsuarioseTipoUsuario",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/Usuarios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Usuarios"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "Logar",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Email\": \r\n        \"admin@admin.com\",\r\n    \"Senha\": \r\n        \"admin\"\r\n    \r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/Login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Login"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

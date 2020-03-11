@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Senai.Senatur.WebApi</name>
+    </assembly>
+    <members>
+        <member name="M:Senai.Senatur.WebApi.Controller.LoginController.#ctor">
+            <summary>
+            Instancia este objeto para que haja a referência aos métodos no repositório
+            </summary>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controller.LoginController.Post(Senai.Senatur.WebApi.DataBaseFirst.ViewModel.LoginViewModel)">
+            <summary>
+            Logar um usuario
+            </summary>
+            <param name="login"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controller.PacotesController.Get">
+            <summary>
+            Lista os pacotes
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controller.PacotesController.GetById(System.Int32)">
+            <summary>
+            Seleciona um pacote por ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controller.PacotesController.Post(Senai.Senatur.WebApi.Domains.Pacotes)">
+            <summary>
+            Criar um novo pacote 
+            </summary>
+            <param name="novoPacote"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controller.PacotesController.Put(System.Int32,Senai.Senatur.WebApi.Domains.Pacotes)">
+            <summary>
+            Atualiza um pacote já existente
+            </summary>
+            <param name="id"></param>
+            <param name="atualizarPacotes"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controller.UsuariosController.Get">
+            <summary>
+            Uma lista com todos os usuários mostrando o título do tipo de usuário
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.DataBaseFirst.Interfaces.IPacotesRepository.Listar">
+            <summary>
+            Lista a lista de pacotes
+            </summary>
+            <returns>lista de pacotes</returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.DataBaseFirst.Interfaces.IPacotesRepository.BuscarPorId(System.Int32)">
+            <summary>
+            Busca um pacote pelo id
+            </summary>
+            <param name="id"></param>
+            <returns>o pacote buscado</returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.DataBaseFirst.Interfaces.IPacotesRepository.Cadastrar(Senai.Senatur.WebApi.Domains.Pacotes)">
+            <summary>
+            Cadastra um novo pacote
+            </summary>
+            <param name="pacotes"></param>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.DataBaseFirst.Interfaces.IPacotesRepository.Atualizar(System.Int32,Senai.Senatur.WebApi.Domains.Pacotes)">
+            <summary>
+            Atualiza um pacote
+            </summary>
+            <param name="id"></param>
+            <param name="pacoteAtualizado"></param>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.DataBaseFirst.Interfaces.IPacotesRepository.PacotesAtivos">
+            <summary>
+            Lista apenas os pacotes ativos
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.DataBaseFirst.Interfaces.IPacotesRepository.PacotesInativos">
+            <summary>
+            Lista apenas os pacotes inativos
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.DataBaseFirst.Interfaces.IPacotesRepository.Cidades(System.String)">
+            <summary>
+            Lista os pacotes por cidade 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.DataBaseFirst.Interfaces.IPacotesRepository.PorPreco(System.Int32)">
+            <summary>
+            Lista os pacotes por preço
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.DataBaseFirst.Interfaces.IUsuarioRepository.listarComTipos">
+            <summary>
+            Lista um usuario com os tipos de usuarios
+            </summary>
+            <returns>Usuarios com tipos de usuario</returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.DataBaseFirst.Interfaces.IUsuarioRepository.BuscarPorEmailSenha(System.String,System.String)">
+            <summary>
+            Valida o usuario
+            </summary>
+            <param name="email"></param>
+            <param name="senha"></param>
+            <returns>Um usuáraio auteneticado</returns>
+        </member>
+    </members>
+</doc>
